@@ -5,9 +5,105 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://bit.ly/webApp_Assets_background");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: aliceblue;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#weather-app {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.left-arrow-container {
+  float: left;
+  margin-top: 165px;
+  margin-left: 10px;
+}
+
+.right-arrow-container {
+  float: right;
+  margin-top: 165px;
+  margin-right: 10px;
+}
+
+.arrow {
+  height: 45px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.today-weather-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.city-name p {
+  font-size: 40px;
+}
+
+.today-weather-container img {
+  width: 120px;
+  height: 95px;
+}
+
+.current-temp p {
+  font-size: 55px;
+  margin: 0;
+}
+
+.today-temp p {
+  font-size: 20px;
+  white-space: pre;
+}
+
+.current-weather-description p {
+  font-size: 18px;
+}
+
+hr {
+  margin-top: 50px;
+  opacity: 0.2;
+  display: block;
+}
+
+.forecast-container {
+  margin-top: 20px;
+}
+
+.forecast-day-container {
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.forecast-day-container img {
+  width: 45px;
+  height: 33px;
+}
+
+@media only screen and (max-width: 487px) {
+  .forecast-day-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  hr {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .today-weather-container img {
+    width: 95px;
+    height: 70px;
+  }
 }
